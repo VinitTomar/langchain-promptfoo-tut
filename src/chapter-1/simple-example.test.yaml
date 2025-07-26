@@ -1,0 +1,3 @@
+- assert:
+    - type: contains
+      value: 'blue'

@@ -1,0 +1,8 @@
+prompts:
+  - file://simple-example.prompt.txt
+
+providers:
+  - id: file://simple-example.ts
+    label: 'My custom provider'
+
+tests: file://simple-example.test.yaml
