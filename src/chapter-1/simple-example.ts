@@ -1,5 +1,5 @@
 import { ProviderResponse } from 'promptfoo';
-import { Example } from '../utils';
+import { Example } from '../shared/base-example-api-provider';
 
 export default class Example1 extends Example {
 
