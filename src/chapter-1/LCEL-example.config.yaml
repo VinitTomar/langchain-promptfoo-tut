@@ -1,0 +1,8 @@
+prompts:
+  - file://LCEL-example.prompt.txt
+
+providers:
+  - id: file://LCEL-example.ts
+    label: 'My custom provider'
+
+tests: file://LCEL-example.test.yaml

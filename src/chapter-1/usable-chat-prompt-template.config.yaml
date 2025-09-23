@@ -1,0 +1,10 @@
+prompts:
+  - file://usable-chat-prompt-template.prompt.txt
+
+providers:
+  - id: file://usable-chat-prompt-template.ts
+    label: 'My custom provider'
+
+
+
+tests: file://usable-chat-prompt-template.test.yaml

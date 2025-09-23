@@ -1,0 +1,17 @@
+- assert:
+    - type: is-json
+      value:
+        required:
+          - answer
+          - justification
+    - type: contains
+      value: same
+    - type: contains
+      value: weight
+    # - type: similar
+    #   value: >
+    #       {
+    #         answer: "They weigh the same",
+    #         justification: "Both a pound of bricks and a pound of feathers weigh one pound. 
+    #           The weight is the same, but the volu"... 42 more characters
+    #       }

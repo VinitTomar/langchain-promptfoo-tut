@@ -1,0 +1,10 @@
+prompts:
+  - file://usable-prompt-template.prompt.txt
+
+providers:
+  - id: file://usable-prompt-template.ts
+    label: 'My custom provider'
+
+
+
+tests: file://usable-prompt-template.test.yaml

@@ -1,0 +1,8 @@
+- assert:
+    # - type: contains
+    #   value: "Hugging Face's `transformers` library"
+    - type: contains
+      value: "OpenAI"
+    - type: contains
+      value: "Cohere"
+    

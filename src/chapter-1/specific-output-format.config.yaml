@@ -1,0 +1,8 @@
+prompts:
+  - file://specific-output-format.prompt.txt
+
+providers:
+  - id: file://specific-output-format.ts
+    label: 'My custom provider'
+
+tests: file://specific-output-format.test.yaml

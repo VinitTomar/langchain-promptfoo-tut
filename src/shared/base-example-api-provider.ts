@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 
 
 dotenv.config({
-  path: path.join(__dirname, '../.env')
+  path: path.join(__dirname, '../../.env')
 });
 
 export abstract class Example implements ApiProvider {

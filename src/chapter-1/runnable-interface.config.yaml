@@ -1,0 +1,8 @@
+prompts:
+  - file://runnable-interface.prompt.txt
+
+providers:
+  - id: file://runnable-interface.ts
+    label: 'My custom provider'
+
+tests: file://runnable-interface.test.yaml

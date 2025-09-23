@@ -1,0 +1,7 @@
+- assert:
+    - type: contains
+      value: 'Paris!!!!'
+    - type: contains
+      value: 'capital'
+    - type: contains
+      value: 'France'

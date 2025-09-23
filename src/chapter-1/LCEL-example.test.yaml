@@ -1,0 +1,5 @@
+- assert:
+  - type: contains
+    value: "OpenAI"
+  - type: contains
+    value: "Cohere"

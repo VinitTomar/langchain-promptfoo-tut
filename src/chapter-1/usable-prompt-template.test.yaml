@@ -1,0 +1,15 @@
+- vars:
+    question: "Which model providers offer LLMs?"
+  assert:
+    # - type: contains
+    #   value: "Hugging Face's `transformers` library"
+    - type: contains
+      value: "OpenAI"
+    - type: contains
+      value: "Cohere"
+- vars:
+    question: "What is the color of a leaf?"
+  assert:
+    - type: contains
+      value: "I don't know"
+    

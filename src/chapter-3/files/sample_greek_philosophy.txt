@@ -1,0 +1,24 @@
+The history of ancient Greek philosophy spans from the 6th century BCE to roughly the 6th century CE. Here are the key figures, grouped by the main periods of ancient Greek philosophy:
+
+
+1. Pre-Socratic Philosophers (6th–5th century BCE)
+ - Name One
+ - Some Two
+ - BlaBla Three
+ - Luice Four
+
+2. Classical Period (5th–4th century BCE)
+ - Socrates
+ - Plato
+ - Aristotle
+
+3. Hellenistic Philosophers (4th–1st century BCE)
+ - Epicurus
+ - Zeno of Citium
+ - Pyrrho of Elis
+
+4. Roman Period / Late Antiquity (1st century BCE–6th century CE)
+ - Plotinus
+ - Proclus
+ - Epictetus
+ - Marcus Aurelius

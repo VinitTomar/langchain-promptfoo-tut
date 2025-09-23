@@ -1,0 +1,12 @@
+# yaml-language-server: $schema=https://promptfoo.dev/config-schema.json
+
+prompts:
+  - file://chat-model.prompt.txt
+
+providers:
+  - id: file://chat-model.ts
+    label: 'My custom provider'
+
+
+
+tests: file://chat-model.test.yaml
