@@ -1,24 +1,19 @@
 import { ChatGoogleGenerativeAI } from '@langchain/google-genai';
-import path from 'path';
 import { ApiProvider, ProviderOptions, ProviderResponse } from 'promptfoo';
-import dotenv from 'dotenv';
 import { GeminiEmbeddings } from './gemini-embeddings';
+import config from './get-env-config';
 
-
-dotenv.config({
-  path: path.join(__dirname, '../../.env')
-});
 
 export abstract class Example implements ApiProvider {
   protected model: ChatGoogleGenerativeAI;
 
   constructor(
-    protected options: ProviderOptions,
+    protected options: ProviderOptions = {},
     modelName: string = "gemini-2.0-flash"
   ) {
     this.model = new ChatGoogleGenerativeAI({
       model: modelName,
-      apiKey: process.env.GOOGLE_API_KEY
+      apiKey: config.GOOGLE_API_KEY
     });
   }
 
@@ -32,7 +27,7 @@ export abstract class Example implements ApiProvider {
 export abstract class ExampleWithEmbeddings extends Example {
   protected embeddings: GeminiEmbeddings;
 
-  constructor(options: ProviderOptions, modelName?: string) {
+  constructor(options?: ProviderOptions, modelName?: string) {
     super(options, modelName);
     this.embeddings = new GeminiEmbeddings();
   }
