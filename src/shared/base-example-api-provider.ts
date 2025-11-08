@@ -36,5 +36,5 @@ export abstract class ExampleWithEmbeddings extends Example {
     return this.options.id || "Simple custom provider with embeddings";
   }
 
-  abstract callApi(prompt: string): Promise<ProviderResponse>;
+  abstract callApi(userInput: string): Promise<ProviderResponse>;
 }

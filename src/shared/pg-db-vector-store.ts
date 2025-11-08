@@ -3,6 +3,7 @@ import { PostgresRecordManager } from '@langchain/community/indexes/postgres';
 
 import { GeminiEmbeddings } from '../shared/gemini-embeddings';
 import { Documents } from '../utils';
+import { connectionUrl } from './pg-db-conn';
 
 
 export class PgDbVectorStore {
@@ -10,15 +11,9 @@ export class PgDbVectorStore {
 
   private static db: PGVectorStore;
   private static pgRecordManager: PostgresRecordManager;
-
-  private static readonly dbUsername = 'dev_user';
-  private static readonly dbPassword = 'dev_password';
-  private static readonly dbHost = 'pg-vector-store';
-  private static readonly dbPort = '5432';
-  private static readonly dbName = 'embedding_db';
   private static readonly dbTableName = 'langchain_tut';
 
-  private static readonly connectionString = `postgresql://${this.dbUsername}:${this.dbPassword}@${this.dbHost}:${this.dbPort}/${this.dbName}`;
+  private static readonly connectionString = connectionUrl()
 
   private static readonly recordTableName = 'upserting_records';
   private static readonly recordNameSpace = 'test_namespace';
